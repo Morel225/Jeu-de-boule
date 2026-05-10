@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Jeu de Boules</h1>
+        </div>
+
+        <div class="canvas-container">
+            <div class="ball-counter">Boules:<span id="ball-counter-value"> 1 </span></div>
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+            <div id="game-over" class="game-over">
+                <h2>GAME OVER</h2>
+                <p>⏱️Vous avez tenu <span id="final-time"> 0 </span> secondes </p>
+                <p>🎯Vous avez bloqué <span id="final-balls"> 0 </span> boules </p>
+                <button id="restart-btn">Jouer à nouveau</button>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <div class="stats">
+                <span>⏱️Temps: <span id="time"> 0 </span> s </span>
+                <span>🎯Boules: <span id="ball-count">1</span> s </span>
+            </div>
+            <button id="restart-btn-over">Recommencer</button>
+        </div>
+        
+        <div class="instructions">
+            <p> Utilisez la souris ou les touches <span class="highlight"> ← </span> et <span> → </span> pour déplacer la barre et empêcher les boules de tomber! </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
